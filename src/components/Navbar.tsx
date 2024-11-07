@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 interface NavbarProps {
-  toggleSidebar: () => void
-  toggleDarkMode: () => void
-  isDarkMode: boolean
+  toggleSidebar: () => void;
+  toggleDarkMode: () => void;
+  isDarkMode: boolean;
 }
 
 export default function Navbar({ toggleSidebar, toggleDarkMode, isDarkMode }: NavbarProps) {
@@ -12,7 +12,6 @@ export default function Navbar({ toggleSidebar, toggleDarkMode, isDarkMode }: Na
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
-    // Implement search functionality
     console.log('Searching for:', searchQuery)
   }
 

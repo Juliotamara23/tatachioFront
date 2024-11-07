@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
 
-export default function Sidebar({ isOpen }: { isOpen: boolean }) {
+interface SidebarProps {
+  isOpen: boolean;
+}
+
+export default function Sidebar({ isOpen }: SidebarProps) {
   return (
     <div className={`sidebar ${isOpen ? '' : 'close'}`}>
       <Link to="/" className="logo">

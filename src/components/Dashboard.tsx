@@ -17,13 +17,13 @@ const insights: InsightData[] = [
 interface OrderData {
   user: string
   date: string
-  status: 'Completed' | 'Pending' | 'Processing'
+  status: 'Completed' | 'Pending' | 'process'
 }
 
 const orders: OrderData[] = [
   { user: 'John Doe', date: '14-08-2023', status: 'Completed' },
   { user: 'John Doe', date: '14-08-2023', status: 'Pending' },
-  { user: 'John Doe', date: '14-08-2023', status: 'Processing' },
+  { user: 'John Doe', date: '14-08-2023', status: 'process' },
 ]
 
 export default function Dashboard() {
